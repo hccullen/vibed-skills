@@ -134,5 +134,5 @@ Inkl. evt. indikation for medicin, mulige bivirkninger og opfølgning.
 | ET | Ernæringstilstand | Nutritional status |
 | St. p | Status pulmonalis | Pulmonary examination |
 | St. c | Status cordis | Cardiac examination |
-| pp | Pure/percussion | Heart action description |
+| pp | Regelmæssig puls | Normal/regular heart action notation |
 | CAVE | (Latin: cave) | Allergies/intolerances to document |

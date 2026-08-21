@@ -1,6 +1,6 @@
 ---
 name: danish-clinical-note
-description: Write Danish clinical notes (journalføring) with correct language, register, and semantics. Use when the user wants to draft, review, or refine a Danish patient journal entry, epikrise, progress note, or prescription, or mentions journalføring, patientjournal, recept, Rp., PSOAP, Danish clinical documentation, or clinical writing style in a Danish healthcare context.
+description: Write Danish clinical notes (journalføring) with correct language, register, and semantics. Use when the user wants to draft, review, or refine a Danish patient journal entry, epikrise, progress note, or prescription, or mentions journalføring, recept, Rp., or PSOAP.
 ---
 
 # Danish Clinical Note — Language, Style, and Semantics
@@ -9,7 +9,7 @@ Write Danish clinical notes that read as if a Danish-trained healthcare professi
 
 The governing standard is **normen for almindelig anerkendt faglig standard**: the norm for generally accepted professional practice, enforced by Styrelsen for Patientklager (STPK). Language that falls below this norm — vague, ambiguous, or uninterpretable to a colleague — is criticisable even when the clinical decision was sound.
 
-See [REFERENCE.md](REFERENCE.md) for the full legal framework, prescription structure, drug form abbreviations, medicinordination requirements, and STPK enforcement patterns.
+This file is sufficient for most journal notes. Sub-pages at the end list the specific situations that require loading them.
 
 ## PSOAP — the Danish journal disposition
 
@@ -35,14 +35,12 @@ The journal must be **entydig og struktureret** — unambiguous and structured �
 
 ## Abbreviations — the comprehension test
 
-The legal test (§9 stk.5 / §4 in the vejledning) is whether the abbreviation is **forståelig for andre autoriserede sundhedspersoner og disses medhjælp** — understandable to other authorised professionals and their assistants who participate in the patient's treatment. *Der må anvendes fagligt anerkendte forkortelser.*
+The legal test is whether the abbreviation is **forståelig for andre autoriserede sundhedspersoner og disses medhjælp** — understandable to other authorised professionals and their assistants who participate in the patient's treatment. *Der må anvendes fagligt anerkendte forkortelser.*
 
 - **Acceptable:** internationally standardised abbreviations widely used in Danish clinical practice — *BP*, *ECG*, *MR*, *CT*, *CRP*, *INR*
 - **Acceptable:** Danish clinical shorthand any Danish healthcare professional would recognise — *indl.*, *udskr.*, *amb.*, *kons.*, *recidiv*, *status praesens*
-- **Acceptable:** traditional pharmaceutical abbreviations on prescriptions — *Rp.*, *No.*, *d.s.*, *tabl.*, *mixt.*, *inj.*, *supp.*, *caps.*, *amp.* (see [REFERENCE.md](REFERENCE.md) for the full list)
+- **Acceptable:** traditional pharmaceutical abbreviations on prescriptions — *Rp.*, *No.*, *d.s.*, *tabl.*, *mixt.*, *inj.*, *supp.*, *caps.*, *amp.* (see [RECEPT.md](RECEPT.md) for the full list)
 - **Not acceptable:** specialty-internal abbreviations, personal shorthand, or non-standard letter-and-slash combinations that a colleague from another specialty cannot decode
-
-When in doubt, spell it out. An abbreviation that forces a colleague to stop and decode has failed its function as a communication tool.
 
 ## Standardtekster og makroer — template language
 
@@ -96,8 +94,6 @@ From the vejledning: *"Oplysninger er nødvendige, når de understøtter, at de 
 - Do not write what the patient's test results already state in a linked report — refer to them
 - Normal findings shall be journalført when they have significance for diagnosis, continued investigation, and correct treatment
 
-Over-documentation is not compliance. A note that buries critical information in boilerplate has failed the relevans- og nødvendighedskriteriet even though it contains everything.
-
 ## Phrasing patterns — PSOAP in practice
 
 **P — Problem:** State what brought the patient in, in one phrase. *"Henvist pga. progredierende dyspnoe i 3 uger."* Not a retelling of the full history. Avoid interpreting: *svie ved vandladning*, not *UVI*.
@@ -122,7 +118,7 @@ d.s.: [brugsanvisning/dosering og indikation]
 ```
 
 - **# (invocatio):** The double-cross opening. Traditional, marks the start of the prescription.
-- **Rp. (recipe):** "Tag" — the instruction to the pharmacist. The most common Danish abbreviation for recipe. R., Rec. also occur.
+- **Rp. (recipe):** "Tag" — the instruction to the pharmacist. R., Rec. also occur.
 - **Ordinatio:** The drug. For farmaceutiske specialiteter: the registered brand name (e.g. *Furix®*), not the generic name alone. If multiple specialities share the name, add the firma name (*Furosemid 1A Farma*). Lægemiddelform in abbreviation before the name (*tabl. Furix 70 mg*) or in Danish after (*Furix tabletter*). Styrke must be stated if multiple strengths exist.
 - **No. (numero):** The quantity to dispense — e.g. *100 stk.*
 - **d.s. (detur signatura):** "Udlever med påskriften" — the brugsanvisning. Must be in **letforståeligt dansk** because it is printed on the medicinpakke the patient receives. Must contain: dosering (enkeltdosis and døgndosis), indikation, and administration instructions where relevant (*indåndes*, *påsmøres*, *indtages med måltid*).
@@ -133,23 +129,13 @@ d.s.: [brugsanvisning/dosering og indikation]
 
 **Off-label:** When prescribing outside the approved produktresumé, journalfør indikation, begrundelse for off-label behandlingen, and the informerede samtykke.
 
-See [REFERENCE.md](REFERENCE.md) for the full prescription structure, drug form abbreviations, dispensing groups, and medicinordination journalføring requirements.
+For full prescription element tables, drug form abbreviations, dispensing groups, FMK rules, afhængighedsskabende lægemidler, and medicintilskudsregler, see [RECEPT.md](RECEPT.md).
 
 ## Medicinordination in the journal
 
-When journalføring a medicinordination, the journal must contain:
+When journalføring a medicinordination, the journal must contain navn, styrke, mængde, dosering, administrationsmåde, hyppighed, doseringstidspunkter, behandlingsvarighed, and hvem der har ordineret. The ordination must be in an **enstrenget system** — on hospitals, the electronic medicinordinationssystem, not the prose journal.
 
-- Navn på lægemidlet
-- Styrke
-- Mængde
-- Dosering
-- Administrationsmåde
-- Hyppighed or the intervaller at which it is given
-- Eventuelle doseringstidspunkter
-- Behandlingsvarighed / when treatment should stop
-- Hvem der har ordineret lægemidlet, og hvordan
-
-The ordination must be in an **enstrenget system** — a single-threaded system so there cannot be modstridende oplysninger about a given ordination. On hospitals this is the electronic medicinordinationssystem, not the prose journal.
+For exact legal citation (§5 content requirements), see [LOVGIVNING.md](LOVGIVNING.md).
 
 ## Tone — professional, not personal
 
@@ -161,17 +147,13 @@ Avoid stigmatising language. A patient who uses substances is not *"stofmisbruge
 
 ## Information and consent — the language of samtykke
 
-*Der er ingen formkrav til, hvordan et informeret samtykke skal fremgå af journalen, men oplysningerne i journalen skal tilpasses den enkelte patient og omstændighederne.*
-
 Record what was said and whether consent was given. Not *"Patienten har fået information og givet samtykke"* — that is a template. *"Patienten har fået mundtlig information om fordele og risici ved behandling med metformin, herunder risiko for laktacidose. Giver informeret samtykke til behandling."*
 
 *Kravet til journalføringen af informationen øges, jo mere kompleks behandlingen er, og jo større risiko der er for udvikling af komplikationer.* Omvendt, if the patient knows the treatment and there are no changes to prior information, it suffices to journal that the patient is informed and consents.
 
-If the patient **fravælger** offered examination or treatment, journalfør this, and the information given about consequences (*helbredsmæssige eller økonomiske konsekvenser*).
+If the patient **fravælger** offered examination or treatment, journalfør this, and the information given about consequences. If the patient has **frabedt sig information** (retten til ikke at vide), this must be noted. **Stiltiende samtykke:** for almindelige deleelementer where the patient's agreement is udtryklige from the situation, the samtykke does not need to be journalført directly — but the journalnotat must show it was a treatment situation covered by stiltiende samtykke.
 
-If the patient has **frabedt sig information** (retten til ikke at vide), this must be noted.
-
-**Stiltiende samtykke:** For almindelige deleelementer in an examination or treatment course where the patient's agreement is udtryklige from the situation (e.g., the patient extends their arm for blood pressure measurement), the samtykke does not need to be journalført directly — but the journalnotat must show it was a treatment situation covered by stiltiende samtykke. If in doubt, indhent udtrykkeligt samtykke and journalfør it.
+For full legal framework (§5.5), see [LOVGIVNING.md](LOVGIVNING.md).
 
 ## Corrections — the language of amendment
 
@@ -180,3 +162,28 @@ If the patient has **frabedt sig information** (retten til ikke at vide), this m
 *"Tilføjelse d. 15/3: Ovenstående notat angår venstre, ikke højre knæ. Korrektion foretaget af [navn, titel]."*
 
 In an electronic journal, the original version must remain accessible after any edit. The correction is a new note, not an overwrite. *Slåfejl og skrivefejl må rettes i forbindelse med selve journalføringen* — but after the note is complete, only additive corrections.
+
+For full legal text (§6), see [LOVGIVNING.md](LOVGIVNING.md).
+
+## Kritiske fund — VAF, VUF, VIF
+
+When communicating critical or unexpected findings by telephone or in person, the documentation must capture both **what was said** and **that it was received**. Danish clinical practice uses a tiered terminology:
+
+| Term | Meaning | Urgency |
+|---|---|---|
+| **VAF** | Vigtigt Abnormt Fund — life-threatening or serious, immediate notification | Within the minute |
+| **VUF** | Vigtigt Uventet Fund — surprising finding not related to the presenting problem, needs further investigation | Within hours |
+| **VIF** | Vigtigt Ikke-akut Fund — important but not urgent | Normal procedure, expedited |
+
+The key linguistic principle: write not only *what* was found but *what was said, to whom, and when*. *"Fund konsulteret telefonisk med [navn, afdeling] kl. [tidspunkt]. Patienten er informeret. [Modtagernavn] har modtaget besked og bekræftet forståelse."*
+
+For the full closed-loop communication documentation checklist, see [LOVGIVNING.md](LOVGIVNING.md).
+
+## Sub-pages
+
+This file is sufficient for most journal notes. Load these only when the specific situation applies:
+
+- **[LOVGIVNING.md](LOVGIVNING.md)** — when you need exact legal citations (§3–§9), full content requirements, STPK enforcement patterns, or the VAF/VUF/VIF closed-loop documentation checklist
+- **[RECEPT.md](RECEPT.md)** — when you need full prescription element tables, drug form abbreviations, dispensing groups, FMK rules, afhængighedsskabende lægemidler, or medicintilskudsregler
+- **[NEUROLOGI.md](NEUROLOGI.md)** — when the contact is a neurologi admission: symptom checklists, neurological examination structure, standardised scores (NRS, NIHSS, SSS, TOKS)
+- **[OENH.md](OENH.md)** — when the contact is an ØNH/ENT admission: organ-specific symptom mapping, procedure-specific documentation (tonsillektomi, laryngoskopi)
