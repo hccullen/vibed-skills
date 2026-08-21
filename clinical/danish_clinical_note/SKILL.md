@@ -180,3 +180,27 @@ If the patient has **frabedt sig information** (retten til ikke at vide), this m
 *"Tilføjelse d. 15/3: Ovenstående notat angår venstre, ikke højre knæ. Korrektion foretaget af [navn, titel]."*
 
 In an electronic journal, the original version must remain accessible after any edit. The correction is a new note, not an overwrite. *Slåfejl og skrivefejl må rettes i forbindelse med selve journalføringen* — but after the note is complete, only additive corrections.
+
+## Kritiske fund — VAF, VUF, VIF
+
+When communicating critical or unexpected findings by telephone or in person, the documentation must capture both **what was said** and **that it was received**. Danish clinical practice uses a tiered terminology:
+
+| Term | Meaning | Urgency |
+|---|---|---|
+| **VAF** | Vigtigt Abnormt Fund — life-threatening or serious, immediate notification | Within the minute |
+| **VUF** | Vigtigt Uventet Fund — surprising finding not related to the presenting problem, needs further investigation | Within hours |
+| **VIF** | Vigtigt Ikke-akut Fund — important but not urgent | Normal procedure, expedited |
+
+**Closed-loop communication pattern** — journalfør:
+
+1. **Entydig identifikation** of the patient (navn + personnummer, closed loop) and accessionnummer if relevant
+2. **Modtageren noterer** tidspunkt, patientidentifikation, and undersøgelsesresultat
+3. **Read-back verification** — modtageren læser tidspunkt, identifikation og resultat op for svarafgiveren
+4. **Gensidig identifikation** — modtageren noterer svarafgivers navn/brugerkode; svarafgiveren noterer modtagerens navn/brugerkode
+5. **Sikring af videreformidling** — modtageren sikrer at svaret bringes videre til den rette fagperson
+
+The key linguistic principle: write not only *what* was found but *what was said, to whom, and when*. *"Fund konsulteret telefonisk med [navn, afdeling] kl. [tidspunkt]. Patienten er informeret. [Modtagernavn] har modtaget besked og bekræftet forståelse."*
+
+## Specialty references
+
+See [NEUROLOGI.md](NEUROLOGI.md) and [OENH.md](OENH.md) for specialty-specific journal templates, terminology, and procedure-specific documentation requirements.

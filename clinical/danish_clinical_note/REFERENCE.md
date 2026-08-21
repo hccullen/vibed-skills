@@ -410,3 +410,26 @@ Apoteket must udlevere the cheapest synonym. Exceptions:
 10. **Missing complication records** — not recording adverse events or errors
 11. **Template not adapted** — pasted standardtekst that does not match the concrete patient contact
 12. **Abbreviations not understandable** — specialty-internal shorthand that colleagues cannot decode
+
+## Communication of Critical Findings (VAF / VUF / VIF)
+
+Danish clinical practice classifies critical findings by urgency:
+
+| Term | Full term | Meaning | Timescale |
+|---|---|---|---|
+| **VAF** | Vigtigt Abnormt Fund | Life-threatening or serious finding requiring immediate notification | Within the minute |
+| **VUF** | Vigtigt Uventet Fund | Surprising finding unrelated to the presenting problem, requires further investigation | Within hours |
+| **VIF** | Vigtigt Ikke-akut Fund | Important for referring clinician but not urgent | Normal procedure, expedited |
+
+### Closed-Loop Communication Documentation
+
+When findings are communicated by telephone or in person, the journal must record:
+
+1. **Entydig identifikation** — patient name + CPR-nummer (closed loop), accessionnummer if relevant
+2. **Tidspunkt** for the communication
+3. **Undersøgelsesresultat** — what was communicated
+4. **Read-back** — modtager læser tidspunkt, identifikation og resultat op for svarafgiver
+5. **Gensidig identifikation** — both parties' navn and/or 4-cifret brugerkode
+6. **Sikring af videreformidling** — modtager sikrer at svaret bringes videre til rette fagperson
+
+Source: [Arbejdsgang vedrørende vigtige uventede fund (VUF)](https://pri.rn.dk/document/AALBORGUH-905462050-1626), Region Nordjylland, Aalborg Universitetshospital, Billeddiagnostik (effective 13/07/2026).
