@@ -1,17 +1,14 @@
-# Reference: Danish Journalføring — Legal and Structural Requirements
+# Legal Framework for Danish Journalføring
 
-Detailed reference for the `danish-clinical-note` skill. Sourced from:
+Reference for the `danish-clinical-note` skill. Sourced from:
 
 - **Vejledning om journalføring for sygehuse og det præhospitale område** (effective 1 January 2026, replacing vejledning nr. 9472 af 25. juni 2024)
 - **Journalføringsbekendtgørelsen** (BEK nr 530 af 24. maj 2018, updated to BEK nr 1008 af 2024, and BEK nr 1361 af 24. november 2025)
 - **STPS guidance** on journalføring for læger
 - **STPK practice summary** on journalføring
-- **Forordningslære** (Klinisk Farmakologisk Afdeling, Aarhus Universitetshospital, September 2021)
-- **Bekendtgørelse om recepter og dosisdispensering af lægemidler** (Receptbekendtgørelsen)
+- **Arbejdsgang vedrørende vigtige uventede fund (VUF)**, Region Nordjylland, Aalborg Universitetshospital, Billeddiagnostik (effective 13/07/2026)
 
-## Legal Framework
-
-### Primary Legislation
+## Primary Legislation
 
 - **Journalføringsbekendtgørelsen** — Bekendtgørelse om autoriserede sundhedspersoners patientjournaler. Latest: BEK nr 1361 af 24. november 2025.
 - **Sundhedsloven** — Bekendtgørelse nr 903 af 26. august 2019
@@ -20,7 +17,7 @@ Detailed reference for the `danish-clinical-note` skill. Sourced from:
 - **Lægemiddelloven** — Bekendtgørelse af lov om lægemidler (16/01/2018)
 - **Receptbekendtgørelsen** — Bekendtgørelse om recepter og dosisdispensering af lægemidler (12/06/2020)
 
-### Guidance Documents (effective 1 January 2026)
+## Guidance Documents (effective 1 January 2026)
 
 - **Vejledning om journalføring for sygehuse og det præhospitale område** — replaces vejledning nr. 9472 af 25. juni 2024
 - **Vejledning om journalføring for almen praksis og speciallægepraksis**
@@ -29,7 +26,7 @@ Detailed reference for the `danish-clinical-note` skill. Sourced from:
 - Vejledning om ordination og håndtering af lægemidler (12/02/2015)
 - Vejledning om ordination af afhængighedsskabende lægemidler (19/06/2019)
 
-### Enforcement Bodies
+## Enforcement Bodies
 
 - **Styrelsen for Patientklager (STPK)** — patient complaints about healthcare services (since 1 July 2018)
 - **Sundhedsvæsenets Disciplinærnævn** — complaints about authorised professionals' conduct
@@ -41,24 +38,13 @@ The standard applied is **normen for almindelig anerkendt faglig standard** — 
 
 ## The Language Requirement (§4 Form og sprog)
 
-From the vejledning:
-
 > *Journalen skal føres på dansk. Faglige beskrivelser, herunder anatomiske betegnelser, diagnoser m.v. må føres med de relevante faglige termer. Der må anvendes fagligt anerkendte forkortelser, som er forståelige for de personer, som deltager i behandlingen af patienten.*
 
 > *Standardtekster, -fraser m.v. kan i egnet omfang anvendes i journalen. Det skal dog altid sikres, at standardtekster eller -fraser er meningsfulde og tilpasset den konkrete patientbehandling, og at der kun fremgår oplysninger, som er relevante.*
 
 > *Journalføringen skal være entydig, systematisk, forståelig og overskuelig af hensyn til kommunikationen, både inden for egen faggruppe og med andre personalegrupper.*
 
-Key points:
-- The journal must be in Danish
-- Professional descriptions (anatomical terms, diagnoses) may use the relevant professional terms (Latin/Greek where established)
-- Professionally recognised abbreviations are permitted, must be understandable to all who participate in the patient's treatment
-- Standardtekster/makroer permitted, must be meaningful and adapted to the concrete patient
-- The journal must be unambiguous, systematic, understandable, and clear
-
 ## Purpose of the Patient Journal
-
-From the vejledning:
 
 > *Patientjournalen er primært et arbejdsredskab for det sundhedsfaglige personale og en forudsætning for en sikker og kontinuerlig behandling. Journalen giver indsigt i og overblik over behandlingsforløbet for det sundhedsfaglige personale, som er involveret i patientens behandling.*
 
@@ -78,7 +64,7 @@ The patient **cannot refuse** journalføring. The patient cannot dictate what or
 
 ### Exemptions
 
-1. **Førstehjælp** — first aid given as a случайно present bystander (umiddelbar afhjælpning at a single treatment)
+1. **Førstehjælp** — first aid given as a tilfældigt present bystander (umiddelbar afhjælpning at a single treatment)
 2. **Event treatment** — treatment at sports clubs, festivals, spejderlejre etc. for ukompliceret conditions, or when the patient is referred onward. An uncomplicated treatment can be resolved immediately, does not require a treatment course, does not involve operative procedures, and does not require prescription of receptpligtig medicin.
 
 ### Timing
@@ -165,7 +151,7 @@ The ordination must be in an **enstrenget system** — a single-threaded system 
 - If patient fravælger offered examination/treatment, journalfør this and the information about consequences
 - Kravet increases with complexity and risk of komplikationer
 - If patient frabedt sig information (retten til ikke at vide), this must be noted
-- Stiltiende samtykke: for almindelige delelementer where the patient's agreement is utvivlsom from the situation, samtykket need not be journalført directly, but the notat must show it was a treatment situation covered by stiltiende samtykke
+- Stiltiende samtykke: for almindelige deleelementer where the patient's agreement is utvivlsom from the situation, samtykket need not be journalført directly, but the notat must show it was a treatment situation covered by stiltiende samtykke
 
 ### Research
 
@@ -216,186 +202,6 @@ Ledelsen must ensure:
 - If the journal is part of a tværfaglig patientjournal with faggrupper that have 5-årig opbevaring: the entire journal is subject to the 10-årig opbevaringspligt
 - Opbevaringspligten covers the entire journal — both papir and elektronisk
 
-## Prescription Structure (Recepten)
-
-### Receptformer
-
-- **Elektroniske recepter:** Standard. Udstedes via FMK. A§4-præparater and magistrelle ordinationer must be electronic (with few exceptions).
-- **Papirrecept:** Only in særlige tilfælde. Cannot genudleveres.
-- **Telefaxrecept:** Must use traditional receptblanket, mærket "Telefaxrecept", cannot genudleveres.
-- **Telefonrecept:** Only when særlige forhold taler for it. Must be indtelefoneret by the læge personally (cannot be delegated). Lægens CPR-nummer must be oplyst. Cannot genudleveres. Apoteket keeps a copy for 3 months.
-
-### Traditional Recept Structure
-
-```
-[Påtrykte udstederdata incl. tlf.nr.]
-[Ydernummer/afdelingskode, autorisations-id]
-[Patientens navn]
-[Adresse]
-[CPR-nr.]
-[Dato]
-
-#
-Rp. [lægemiddelform] [handelsnavn] [styrke]
-No.: [mængde]
-d.s.: [brugsanvisning/dosering og indikation]
-[Tilskud?] [Ej S?] [Trafikfarlig Δ?]
-[Udleveres X gange med Y interval — kun elektronisk]
-
-[Håndskreven underskrift]
-```
-
-### Elements of the Recept
-
-| Element | Danish | Meaning |
-|---|---|---|
-| Invocatio | # | Double-cross, marks start. Traditional. |
-| Rp. | Recipe | "Tag" — instruction to pharmacist. R., Rec. also used. |
-| Ordinatio | | The drug. For specialiteter: brand name (e.g. Furix®), not generic alone. Add firma name if ambiguous. Form before name (*tabl. Furix 70 mg*) or after (*Furix tabletter*). Styrke if multiple strengths. |
-| No. | Numero | Quantity to dispense (*100 stk.*) |
-| d.s. | Detur signatura | "Udlever med påskriften" — brugsanvisning in letforståeligt dansk, printed on medicinpakke. Must include: dosering (enkeltdosis + døgndosis), indikation, administration where relevant. |
-| Ej S | Ej substitution | Pharmacy cannot substitute to cheapest equivalent. Patient pays price difference. |
-| Tilskud | | Write under d.s. when patient qualifies for klausuleret tilskud. |
-| Trafikfarlig Δ | | If the medicine can affect driving ability. |
-| IMM | In Manus Medicus | When prescribing to oneself: "Til eget brug" or "IMM". |
-
-### Brugsanvisning (d.s.)
-
-Must be in **letforståeligt dansk** (for the patient). Must contain:
-- Dosering: both enkeltdosis (per gang) and døgndosis (per day, or other time unit)
-- Indikation: what disease/symptom the medicine is for
-- Administration: how to use it (*indåndes*, *påsmøres*, *opløses i vand*, *indtages med måltid*) where relevant
-
-If very long, the læge may give it to the patient directly and write *"Dosering efter skriftlig anvisning"* on the recept.
-
-### Special Rules
-
-- **Afgivende afvigelser:** When dosis, antal, indikation, styrke, administrationsmåde deviate from usual practice, the læge must either underline the deviation or write values in both numbers and words to show it is intentional.
-- **Off-label:** Use outside the approved produktresumé. Patient must be informed thoroughly. Lægen must journalføre indikation, begrundelse for off-label, and informerede samtykke.
-- **Magistrelle:** Lægen determines the sammensætning (active + hjælpestoffer, mængder, form). Must be electronic (from 1 April 2018). Skærpet informationspligt and indberetningspligt for bivirkninger.
-- **Recept gyldighed:** Max 2 år. Can be shortened by the læge. Papirrecept: one use only. Gruppe B elektronisk: can genudleveres if anført.
-
-### Lægemiddelformer — Abbreviations
-
-| Lægemiddelform | Forkortelse |
-|---|---|
-| Ampuller | amp. |
-| Aqua (vand) | aq. |
-| Kapsler | caps. |
-| Creme | cr. |
-| Opløsning | dil. |
-| Dråber | dr. |
-| Emulsion | emuls. |
-| Ekstrakt | extr. |
-| Granulat | gran. |
-| Implantat | implant. |
-| Infusionsvæske | infund. |
-| Injektion | inj. |
-| Lagenulae (hætteglas) | lag. |
-| Liniment | lin. |
-| Mikstur | mixt. |
-| Pasta | past. |
-| Pulver | pulv. |
-| Resoribletter | resoribl. |
-| Suppositorier (stikpiller) | supp. |
-| Tabletter | tabl. |
-| Tinktur | tinct. |
-| Salve (unguentum) | ung. |
-| Vaccine | vacc. |
-| Vagitorier | vagit. |
-
-### Andre recept-forkortelser
-
-| Udtryk | Forkortelse |
-|---|---|
-| Detur (udleveres) | d. |
-| In Manus Medicus (i lægens hænder) | IMM |
-| Misce (bland) | m. |
-| Numero (antal) | No |
-| Recipe (tag) | Rp. |
-| Reiteretur (kan genudleveres) | reit. |
-| Signatura (mærkes med brugsanvisningen) | s. |
-
-## Udleveringsgrupper
-
-| Gruppe | Regler | Eksempel |
-|---|---|---|
-| A§4 | Kun elektronisk. Udleveres én gang. Særlig overvågning. | Morfinpræparater |
-| A | Udleveres én gang. (Kan udleveres i mindre portioner.) | Methotrexat |
-| B | Papir/telefon/fax: én gang. Elektronisk: kan genudleveres. | Centyl m. kaliumklorid |
-| BEGR | Kun sygehuse. | Infliximab |
-| NB-S | Kun sygehuse/speciallæger. | Acitretin, ketamin |
-| GH | Medicinske gasser i håndkøb. | Lattergas |
-| HA | Håndkøb, apoteksforbeholdt. | Kaleorid |
-| HF | Håndkøb, frihandel. | Magnesia |
-| HX | Håndkøb, ikke apoteksforbeholdt. Én pakke/dag. | Ibuprofen |
-| HA18/HX18 | Håndkøb, aldersgrænse 18 år. | Paracetamol |
-
-## FMK — Det Fælles Medicinkort
-
-FMK is a samlet elektronisk oversigt over each citizen's medicinordinationer, recepter, and registered vacciner. Integrated into EPJ systems.
-
-Contains:
-- Detailed information about all ordinationer, vaccinationer, and købt medicin
-- Patient's praktiserende læge
-- Which læge ordinerede each medicine
-- Complete overview of elektroniske recepter + papir/fax/telefon recepter (last 2 years)
-- Medicine purchased on recept at apoteket (last 2 years)
-- Medicintilskud information
-- Interaktionskontrol (in some EPJ systems)
-- Lægemiddel-cave (intolerances)
-- Access log
-
-### Ajourføring
-
-FMK must be ajourført:
-- At all contacts where changes are made (including ambulante besøg on sygehuse)
-- At henvisning from praktiserende læge to indlæggelse/sygehusafdeling/other læge
-- At udskrivning from sygehus
-
-An ajourføring marks that FMK reflects the medicin the patient currently takes. It is not a medicingennemgang, but a markering of current medicin + a tilkendegivelse that there are no åbenlyse fejl.
-
-## Afhængighedsskabende Lægemidler
-
-Four groups:
-1. Morfin and morfinlignende (opioide analgetika)
-2. Benzodiazepiner and benzodiazepinreceptor-acting substances
-3. Centralstimulerende midler with narrow indication
-4. Visse andre with afhængigheds-/misbrugspotentiale
-
-### Key Rules
-
-- Before starting treatment: lay a **behandlingsplan** with the patient (effect, bivirkninger, expected duration)
-- Ordination and fornyelse: **personligt fremmøde** — cannot be renewed by phone, email, or via sekretær
-- Do not prescribe to other than sædvanlige patienter unless nødvendiggjort — then only enough to reach egen læge
-- Must inform patient's sædvanlige læge (can be done without samtykke — lægen acts as stedfortræder)
-- Must assess kørekort fitness — if not betryggende, kørselsforbud; if patient won't comply, contact Tilsyn og Rådgivning
-- Tilsyn: jævnlig kontrol of A§4 ordinationer and benzodiazepiner; stikprøvekontrol based on apotek/Lægemiddelstyrelsen data
-
-## Medicintilskudsregler
-
-### Generelle Tilskud
-
-1. **Alment tilskud:** Automatic, regardless of indication. Marked ● on pro.medicin.dk.
-2. **Klausuleret tilskud (receptpligtig):** For specific diseases/groups. Lægen writes "Tilskud" on recepten (or confirms in electronic module). Marked ⊕.
-3. **Klausuleret tilskud (håndkøb):** For pensionister or specific diseases. Lægen writes "Tilskud". Marked ■.
-4. **Medicinsk cannabis:** Særligt tilskud. Marked *.
-
-### Individuelle Tilskud
-
-Must be sought by a læge via fmk-online.dk:
-
-1. **Enkelttilskud:** For medicine not otherwise tilskudsberettiget, when of særlig behandlingsmæssig betydning and other treatments insufficient. Can be retroactive (max 180 days), tidsbegrænset or livslang.
-2. **Forhøjet tilskud:** When patient cannot tolerate the cheapest medicine in a substitutionsgruppe. Livslang. Must seek for each pakningsstørrelse and styrke.
-3. **Terminaltilskud:** 100% tilskud for dying patients choosing hjemme/hospice. Lægen signs a terminalerklæring. Covers all præparater in a substitutionsgruppe + ikke-receptpligtig medicin on recept.
-
-### Substitution
-
-Apoteket must udlevere the cheapest synonym. Exceptions:
-- Lægen wrote "Ej S" — patient pays price difference
-- Patient requests different præparat — patient pays difference
-- Price difference under bagatelgrænse — apoteket may choose
-
 ## Common Enforcement Patterns (STPK)
 
 1. **Missing identification** — not recording who performed the treatment or wrote the note
@@ -412,8 +218,6 @@ Apoteket must udlevere the cheapest synonym. Exceptions:
 12. **Abbreviations not understandable** — specialty-internal shorthand that colleagues cannot decode
 
 ## Communication of Critical Findings (VAF / VUF / VIF)
-
-Danish clinical practice classifies critical findings by urgency:
 
 | Term | Full term | Meaning | Timescale |
 |---|---|---|---|
